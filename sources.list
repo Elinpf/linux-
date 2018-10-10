@@ -1,0 +1,16 @@
+# 
+
+# deb cdrom:[Debian GNU/Linux 2017.1 _Kali-rolling_ - Official Snapshot amd64 LIVE/INSTALL Binary 20170416-02:08]/ kali-rolling contrib main non-free
+
+#deb cdrom:[Debian GNU/Linux 2017.1 _Kali-rolling_ - Official Snapshot amd64 LIVE/INSTALL Binary 20170416-02:08]/ kali-rolling contrib main non-free
+
+#aliyun 的源有Hash校验和不匹配问题， 部分源改为中科大
+deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+#deb http://mirrors.ustc.edu.cn/kali-security kali-current/updates main contrib non-free
+#deb-src http://mirrors.ustc.edu.cn/kali-security kali-current/updates main contrib non-free
+
+#deb http://mirrors.aliyun.com/kali-security/ sana/updates main contrib non-free
+#deb-src http://mirrors.aliyun.com/kali-security/ sana/updates main contrib non-free
+
+#deb http://ftp.cn.debian.org/debian wheezy main 
