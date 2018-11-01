@@ -91,6 +91,12 @@ runtime! debian.vim
   " 多光标多行编辑器, https://github.com/terryma/vim-multiple-cursors
   "Plugin 'terryma/vim-multiple-cursors'
 
+  " minitest 语法
+  Plugin 'sunaku/vim-ruby-minitest'
+
+  " coffee-script 语法
+  Plugin 'kchmck/vim-coffee-script'
+
 
   " 你的所有插件需要在下面这行之前
   call vundle#end()            " 必须
@@ -154,7 +160,7 @@ let mapleader="'"
 
     " 替换Backspace 为 Alt + n
     "inoremap <BS> <Nul>
-    inoremap <M-n> <BS>
+    "inoremap <M-n> <BS>
 
     " 在插入模式下使用上下左右
     "imap <M-h> <Left>
@@ -213,6 +219,9 @@ let mapleader="'"
     " 使用方法: <c-o><c-x><c-x><c-o>
     autocmd FileType scss set omnifunc=csscomplete#CompleteCSS
     autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+
+    " minitest 自动补全 i_CTRL-X_CTRL-U
+    set completefunc=syntaxcomplete#Complete
 
 " }
 
